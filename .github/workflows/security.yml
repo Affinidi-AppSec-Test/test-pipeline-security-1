@@ -18,3 +18,4 @@ jobs:
     secrets:
       SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
       GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
