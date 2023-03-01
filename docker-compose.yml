@@ -8,10 +8,9 @@ services:
     volumes:
       - ./:/code
     environment:
-      - MONGO_URL=mongodb://superlongusername:superlonnnnnnnnnngpaswworrrd@mongodatabase:27017/?authSource=admin
+      - MONGO_URL=mongodb://jnasdkkxxx:12nn22wwr9921312121@mongodatabase:27017/?authSource=admin
       - PORT=3000
       - MONGO_TOKEN=sadasn121344nj010
-      - DATABASE=test
     depends_on:
       - mongodatabase
   mongodatabase:
