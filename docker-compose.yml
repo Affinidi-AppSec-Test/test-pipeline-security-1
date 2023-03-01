@@ -10,6 +10,7 @@ services:
     environment:
       - MONGO_URL=mongodb://superlongusername:superlonnnnnnnnnngpaswworrrd@mongodatabase:27017/?authSource=admin
       - PORT=3000
+      - MONGO_TOKEN=sadasn121344nj010
       - DATABASE=test
     depends_on:
       - mongodatabase
@@ -24,3 +25,4 @@ services:
         - MONGO_INITDB_ROOT_PASSWORD=superlonnnnnnnnnngpaswworrrd
 volumes:
  mongodb:
+  
