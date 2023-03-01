@@ -96,7 +96,7 @@ jobs:
       # - name: Setup Node
       #   uses: actions/setup-node@v2
       #   with:
-      #     node-version: '14'
+      #     node-version: '16'
 
       # https://github.com/redhat-actions/openshift-tools-installer/blob/main/README.md
       - name: Install CRDA CLI
@@ -121,6 +121,6 @@ jobs:
         id: scan
         uses: redhat-actions/crda@v1
         with:
-          crda_key: ${{ secrets.CRDA_KEY }}           # Either use crda_key or snyk_token
-          # snyk_token: ${{ secrets.SNYK_TOKEN }}
+          # crda_key: ${{ secrets.CRDA_KEY }}           # Either use crda_key or snyk_token
+          snyk_token: ${{ secrets.SNYK_TOKEN }}
           # upload_artifact: false                    # Set this to false to skip artifact upload
