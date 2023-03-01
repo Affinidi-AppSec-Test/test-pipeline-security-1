@@ -6,6 +6,9 @@ import { VCSPhonePersonV1, getVCPhonePersonV1Context } from '@affinidi/vc-data'
 import { getInitiateSchema, getVerifySchema } from './schemas'
 import { EndpointParamsBase, EndpointRespBase, VerifyRespVCsBase } from './config'
 
+
+const MONGO_DB_PASSWORD = "123asdasd1212d12";
+
 describe('getInitiateSchema', () => {
   let validateBody: Ajv.ValidateFunction
   let validateResponse200: Ajv.ValidateFunction
