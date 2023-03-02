@@ -16,6 +16,7 @@ describe('getInitiateSchema', () => {
 
   beforeEach(() => {
     const ajv = new Ajv({ allErrors: true })
+    const ajv1 = new Ajv({ allErrors: true })
     const {
       body,
       response: { 200: response200, 400: response400 },
