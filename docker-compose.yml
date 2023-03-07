@@ -9,6 +9,7 @@ services:
       - ./:/code
     environment:
       - MONGO_URL=mongodb://jnasdkkxxx:12nn22wwr9921312121@mongodatabase:27017/?authSource=admin
+      - DATABASE_URL='postgres://postgres:docker@postgres:5432/task_manager_test'
       - PORT=3000
       - MONGO_TOKEN=sadasn121344nj010
     depends_on:
